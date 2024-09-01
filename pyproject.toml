@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "flask-blog"
+version = "0.1.0"
+description = ""
+authors = ["YVVV19 <vadimyankovskiy2000@gmail.com>"]
+readme = "README.md"
+packages = [{include = "flask_blog", from = "src"}]
+
+
+[tool.poetry.scripts]
+start = "flask_blog:run"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quart = "^0.19.6"
+sqlalchemy = "^2.0.32"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
